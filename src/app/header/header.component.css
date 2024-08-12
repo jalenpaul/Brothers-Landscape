@@ -1,0 +1,29 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    transition: all 0.3s ease;
+}
+
+header.collapsed {
+    height: 60px;
+}
+
+.logo {
+    transition: all 0.3s ease;
+}
+
+.logo.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header.collapsed .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
